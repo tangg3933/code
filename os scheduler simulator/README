@@ -1,1 +1,28 @@
+OS scheduler simulator simulating a slot machine being used by multiple customers with different priorities. Priority determines which customer are allowed to use the machine
 
+
+Script desription:
+baseline.cpp
+Original scheduler that schedules customers to play with Round Robin
+
+scheduler.cpp
+Modified scheduler that schedules customer by their priority and with Shortest remaining playing time
+
+compute_stats.cpp 
+Compare the measured attributes 
+
+
+Follow these 2 steps below to create a test file
+
+Type each following commands in the steps to a terminal that is in the same directory as the create_test.cpp file. After Step 2, a data_test.txt file should appear containing the randomly generated tests.
+
+Step #1: Compilation
+g++ create_test.cpp -o create_test
+
+Step #2: Execution
+./create_test data_test.txt
+
+
+Run scripts:
+./scheduler <input data file> <output file>
+./compute_stats <original data file> <output data file produced from scheduler>
