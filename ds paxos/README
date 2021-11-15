@@ -1,1 +1,42 @@
+Paxos implementation for a council to agree on a message by consensus
 
+Council arguments
+Council <port number>
+Member arguments
+Member <What member (M1,M2,M3,M4-9)> <port number>
+
+Test cases:
+    Each test case will output if the concensus was agreed or not to output.txt and will be compared to test<number>_actual_output.txt
+
+If test cases error states the "Address already in use", write in terminal: 
+    1. lsof -i: <Enter port number in test case file>
+    2. kill -9 <Enter PID that has the tag (LISTEN)>
+
+Test cases description:
+    test.sh:  - M2 will make a proposal 
+              - The response of the proposal will be very late (4s delayed response) and would not understand the proposal
+              - The output in output.txt will be "Consensus failed"
+
+    test1.sh: - M3 will make a proposal 
+              - M3 would not recieve the proposal
+              - The output in output.txt will be "Consensus failed"
+
+    test2.sh: - M6 will make a proposal
+              - The response time will be unknown (will be printed) and would accept the proposal
+              - The output in output.txt will be "Consensus passed"
+            
+    test3.sh: - M9 will make a proposal
+              - The response time will be unknown (will be printed) and would not accept the proposal
+              - The output in output.txt will be "Consensus failed"
+
+    test4.sh: - M1 and M4 will make proposals
+              - M4 response time will be unknown (will be printed) and would not accept the proposal itself has proposed as it already accepted M1 proposal
+              - The output in output.txt will be "Consensus passed"
+
+    test5.sh: - One of the members from M1-M9 will make a proposal and they will all accept the proposal
+              - All members will have immediate responses to voting queries
+              - The output in output.txt will be "Consensus passed"
+
+    test6.sh: - M2 will make a proposal and all members will accept the proposal
+              - All member will perform their own behaviours
+              - The output in output.txt will be unknown as members will either accept or reject the proposal at their own will
