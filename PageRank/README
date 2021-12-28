@@ -1,1 +1,3 @@
-
+Python implementation of PageRank
+Implementation includes solutions to overcome spider traps and dead ends
+Change the file name in line 5 and 12 to run different test files.
