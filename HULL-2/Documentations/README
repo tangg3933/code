@@ -1,0 +1,21 @@
+Documentations of methods and algorithms
+
+There are two parts:
+
+1. C# wrapper part: People associated with this part should provide study and write documentation that adapts this project. For what is a C# wrapper, see https://www.c-sharpcorner.com/blogs/wrapper-class-in-c-sharp1
+
+
+
+2. Algorithm research part: People associated with this part should study the problem and provide initial solutions. i.e., find online libraries or providing pseudocode.
+The algorithm research is not just documentation, but you will have to validate your solution.
+
+The software engineer is supposed to get completed designed, examined solutions to implement, not be involved in researching.
+
+
+Below is a tip for writing an Algorithm documents process:
+1. (optional) write something about background math about the problem to make it easier to understand the problem
+2. Write or find pseudocode or public library of solution
+3.1 If you use a public library, use test datasets to examine whether the output meets expected. The test datasets can be 3rd party, DO NOT WAIT until SDE to solve their problem and give you test data; there are many public datasets online.
+3.2 If you are writing pseudocode, you need to design or find a test case to go through your pseudocode, i.e.: input something, go through the algorithm, calculate what the output will be at each line, and base on the result, what step we should jump in the algorithm (if-else while logic), determine the final output
+4. Examine the output if it meet our expected
+

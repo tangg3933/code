@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythonWrapper", "PythonWrapper\PythonWrapper.csproj", "{86F52981-7FF7-48D1-ABF2-D2DFC8F96BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProject", "ExampleProject\ExampleProject.csproj", "{4F50E94A-9346-44B3-BCC1-44014B8D66BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86F52981-7FF7-48D1-ABF2-D2DFC8F96BFD} = {86F52981-7FF7-48D1-ABF2-D2DFC8F96BFD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86F52981-7FF7-48D1-ABF2-D2DFC8F96BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F52981-7FF7-48D1-ABF2-D2DFC8F96BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F52981-7FF7-48D1-ABF2-D2DFC8F96BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F52981-7FF7-48D1-ABF2-D2DFC8F96BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F50E94A-9346-44B3-BCC1-44014B8D66BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F50E94A-9346-44B3-BCC1-44014B8D66BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F50E94A-9346-44B3-BCC1-44014B8D66BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F50E94A-9346-44B3-BCC1-44014B8D66BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
