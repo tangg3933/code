@@ -3,14 +3,14 @@ from numpy.linalg import matrix_power
 import array
 
 #Importing the 'from node' 
-with open('test2.txt') as f:
+with open('test1.txt') as f:
     col1 = [int(line.split()[0]) for line in f]
     colLen = len(col1)
     col1num = list(dict.fromkeys(col1))
     nl = len(col1num)
 
 #Importing the 'to node'
-with open('test2.txt') as f:
+with open('test1.txt') as f:
     col2 = [int(line.split()[1]) for line in f]
     col2num = list(dict.fromkeys(col2))
     n2 = len(col2num)

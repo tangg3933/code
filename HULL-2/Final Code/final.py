@@ -13,7 +13,7 @@ class ObjLoader(object):
         self.faces = []
         ##
         try:
-            f = open(fileName)
+            f = 'C:\Users\Gordon\Documents\GitHub code\code\HULL-2\TestData\Model\410'
             for line in f:
                 if line[:2] == "v ":
                     index1 = line.find(" ") + 1
