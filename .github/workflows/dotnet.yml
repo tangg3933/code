@@ -19,8 +19,8 @@ jobs:
         dotnet-version: 5.0.x 
     - name: Install dependencies
       run: dotnet restore
-      working-directory: pipeline testing
+      working-directory: pipeline testing\bin\Debug\net5.0\pipelinetesting.dll
     - name: Build
-      run: dotnet build Program --no-restore
+      run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
