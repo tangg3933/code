@@ -21,6 +21,7 @@ jobs:
       run: dotnet restore
       working-directory: pipeline testing
     - name: Build
-      run: dotnet build Program.sln --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore
+      working-directory: pipeline testing
     - name: Test
       run: dotnet test --no-build --verbosity normal
