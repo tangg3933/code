@@ -16,9 +16,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 5.0.400
+        dotnet-version: 5.0.x 
     - name: Install dependencies
       run: dotnet restore
+      working-directory: pipeline testing
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
