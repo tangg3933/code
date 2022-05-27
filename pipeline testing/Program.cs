@@ -14,6 +14,16 @@ class Program
         return x+y;
     }
 
+    public static int Square(int x)
+    {
+        return x*x;
+    }
+
+    public static int Multi(int x, int y)
+    {
+        return x*y;
+    }
+
     public static bool IsOdd(int value)
     {
         return value % 2 == 1;
